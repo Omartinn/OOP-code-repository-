@@ -73,6 +73,10 @@ def manual_grow(crop):
         except ValueError:
             print("Value entered not valid - please enter a value between 1 and 10")
     crop.grow(light,water)
+    print()
+    print("------------------------------")
+    print()
+
 
 
 def display_menu():
@@ -82,6 +86,7 @@ def display_menu():
     print("0. Exit test program")
     print()
     print("Please select an option from the above menu")
+    print()
 
 
 def get_menu_choice():
@@ -89,6 +94,9 @@ def get_menu_choice():
     while not option_valid:
         try:
             choice = int(input("Option Selected: "))
+            print()
+            print("------------------------------")
+            print()
             if 0 <= choice <= 4:
                 option_valid = True
             else:
@@ -117,13 +125,6 @@ def manage_crop(crop):
             noexit = False
             print()
     print ("Thank you for using the crop management program")
-        
-        
-            
-        
-                 
-    
-    
         
 def main():
     new_crop = Crop(1,4,3)
